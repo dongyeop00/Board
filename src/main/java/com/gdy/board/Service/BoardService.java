@@ -61,6 +61,6 @@ public class BoardService {
     }
 
     public void delete(Long id) {
-        boardRepository.deleteById(id);
+        boardRepository.deleteById(id); //키 값을 찾아서 삭제
     }
 }

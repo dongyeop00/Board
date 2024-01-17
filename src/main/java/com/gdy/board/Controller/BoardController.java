@@ -49,15 +49,15 @@ public class BoardController {
 
     @GetMapping("/update/{id}")
     public String updateForm(@PathVariable Long id, Model model) {
-        BoardDTO boardDTO = boardService.findById(id);
-        model.addAttribute("boardUpdate", boardDTO);
+        BoardDTO boardDTO = boardService.findById(id); //id로 값들을 찾아 dto에 저장
+        model.addAttribute("boardUpdate", boardDTO); //저장한 값을 model에 담아 전달
         return "update";
     }
 
     @PostMapping("/update")
     public String update(@ModelAttribute BoardDTO boardDTO, Model model){
-        BoardDTO board = boardService.update(boardDTO);
-        model.addAttribute("board",board);
+        BoardDTO board = boardService.update(boardDTO); // dto -> entity로 변환해 저장
+        model.addAttribute("board",board); //저장한 값을 model에 담아 전달
         return "detail";
         // return "redirect:/board/" + boardDTO.getId();
     }
