@@ -24,3 +24,7 @@
 6. 페이징처리
 
 ### 댓글 기능
+
+
+# 개발 일지
+https://velog.io/@dongyeop00/%EA%B2%8C%EC%8B%9C%EA%B8%80-%EB%A1%9C%EC%A7%81-%EA%B5%AC%ED%98%84
